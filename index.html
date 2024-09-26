@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle, #ffcc00, #ff6699, #ff1493);
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .container {
+            text-align: center;
+            position: relative; /* For positioning the animated balloons */
+        }
+
+        .happy-birthday-text {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .birthday-button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .birthday-button:hover {
+            background-color: #a53571;
+            transform: scale(1.05); /* Button scaling effect */
+        }
+
+        .big {
+            font-size: 70px;
+            position: relative;
+            bottom: 90px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Balloon-like animated circles */
+        .balloon {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="big">BIG 30!</div>
+        <div class="happy-birthday-text">Wishing You a Wonderful Birthday!</div>
+        <button class="birthday-button" onclick="goToBirthdayPage()">Happy Birthday, Nurse Martha!</button>
+        
+        <!-- Balloons -->
+        <div class="balloon" style="width: 50px; height: 50px; background-color: #ffcc00; top: 10%; left: 20%;"></div>
+        <div class="balloon" style="width: 40px; height: 40px; background-color: #ff6699; top: 5%; left: 70%;"></div>
+        <div class="balloon" style="width: 60px; height: 60px; background-color: #ff1493; top: 20%; left: 50%;"></div>
+        <div class="balloon" style="width: 45px; height: 45px; background-color: #00ccff; top: 15%; left: 30%;"></div>
+        <div class="balloon" style="width: 55px; height: 55px; background-color: #99ff99; top: 25%; left: 80%;"></div>
+    </div>
+
+    <script>
+        function goToBirthdayPage() {
+            window.open("indexmartha2.html", "_blank"); // Opens in a new tab/window
+        }
+    </script>
+
+</body>
+</html>
