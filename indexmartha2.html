@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Celebration!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(45deg, #ffcccb, #ffb6c1, #ffc3a0, #ffdead, #ffecd2, #ffddc1);
+      background-size: 300% 300%;
+      animation: gradientBG 6s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .birthday-message {
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      
+    }
+
+    h1 {
+            font-size: 4rem;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .letter {
+            display: inline-block;
+        }
+
+        .letter:nth-child(1) { color: red; }
+        .letter:nth-child(2) { color: orange; }
+        .letter:nth-child(3) { color: yellow; }
+        .letter:nth-child(4) { color: green; }
+        .letter:nth-child(5) { color: blue; }
+        .letter:nth-child(6) { color: purple; }
+        .letter:nth-child(7) { color: pink; }
+        .letter:nth-child(8) { color: teal; }
+        .letter:nth-child(9) { color: coral; }
+        .letter:nth-child(10) { color: gold; }
+        .letter:nth-child(11) { color: lime; }
+        .letter:nth-child(12) { color: navy; }
+        .letter:nth-child(13) { color: violet; }
+        .letter:nth-child(14) { color: cyan; }
+        .letter:nth-child(15) { color: magenta; }
+        .letter:nth-child(16) { color: rgb(165, 42, 63); }
+        .letter:nth-child(17) { color: rgb(199, 230, 173); }
+
+    .birthday-message h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .birthday-message p {
+      font-size: 1.5rem;
+    }
+
+    .balloons {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgb(140, 5, 73);
+      animation: float 8s infinite;
+    }
+
+    .balloon:nth-child(2) { left: 25%; background-color: rgba(173, 216, 230, 0.7); animation-duration: 10s; }
+    .balloon:nth-child(3) { left: 50%; background-color: rgba(255, 255, 102, 0.7); animation-duration: 7s; }
+    .balloon:nth-child(4) { left: 75%; background-color: rgba(135, 206, 235, 0.7); animation-duration: 9s; }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-150vh); opacity: 0; }
+    }
+
+    
+
+        .gift-message {
+            background-color: #d0efa9;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 20px; /* 20px from the bottom of the page */
+            right: 20px;  /* 20px from the right side */
+            z-index: 1000;
+        }
+
+        h1 {
+            font-size: 1rem;
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .names {
+            font-weight: bold;
+            color: #4682b4;
+        }
+
+        .forgot-name {
+            color: #ff4500;
+            font-style: italic;
+        }
+
+        .emoji {
+            font-size: 1rem;
+        }
+  </style>
+</head>
+<body>
+
+  <div class="birthday-message">
+    
+    <h1>
+      <span class="letter">H</span>
+      <span class="letter">a</span>
+      <span class="letter">p</span>
+      <span class="letter">p</span>
+      <span class="letter">y</span>
+      <span class="letter"> </span>
+      <span class="letter">B</span>
+      <span class="letter">i</span>
+      <span class="letter">r</span>
+      <span class="letter">t</span>
+      <span class="letter">h</span>
+      <span class="letter">d</span>
+      <span class="letter">a</span>
+      <span class="letter">y</span>
+      <span class="letter"> </span>
+      <span class="letter">M</span>
+      <span class="letter">a</span>
+      <span class="letter">r</span>
+      <span class="letter">t</span>
+      <span class="letter">h</span>
+      <span class="letter">a</span>
+      </h1>
+    <p>Wishing you a day filled with happiness, joy, and all the colors of the rainbow!</p>
+  </div>
+
+  
+  <div class="gift-message">
+    <h1>🎁 A Special Gift 🎁</h1>
+    <p class="names">From: Ruel, Feng, <span class="forgot-name">Omo... I can't remember the last born's name, and myself</span></p>
+    <p class="emoji">🎉💝🎈</p>
+</div>
+
+  <div class="balloons">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+</body>
+</html>
